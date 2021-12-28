@@ -1,0 +1,9 @@
+{
+    
+    "env": {
+        "username": "admin",
+        "password": "Admin123"
+    },
+
+    "execTimeout":100000
+}

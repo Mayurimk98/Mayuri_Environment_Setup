@@ -1,0 +1,27 @@
+{
+  "name": "auto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "local": "npx cypress run --headed --browser chrome --config baseUrl=https://www.redbus.com/",
+    "staging": "npx cypress open --config baseUrl=https://www.facebook.com/",
+    "canary": "npx cypress open --config baseUrl=https://www.instagram.com/",
+    "production": "npx cypress open --config baseUrl=https://www.reddif.com/",
+    "stagingconfig": "npx cypress open --config-file staging-config.json",
+    "prodconfig": "npx cypress open --config-file production-config.json",
+    "produtility": "npx cypress open  --env ENV=production",
+    "stagutility": "npx cypress run --headed --browser chrome  --env ENV=staging",
+    "localutility": "npx cypress open  --env ENV=local",
+    "envusername": "npx cypress open --env username=mayuri",
+    "envpassword": "npx cypress open --env password=mayuri123",
+    "newenvpassword":"npx cypress run --headed --browser chrome --env ENV=staging,username=admin222,password=mayuri"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^9.1.0",
+    "npx": "^10.2.2"
+  }
+}
