@@ -12,13 +12,14 @@
 // })
 
 //==========================================================================================
-// describe('Validate the login functionality', () => {
-//     it('Example of Baseurl', () => {
-//         let url = Cypress.config().baseUrl //accesing baseUrl
-//         cy.visit(url) //passing url value to cy.visit()
+describe('Validate the login functionality', () => {
+    it('Example of Baseurl', () => {
+        let url = Cypress.config().baseUrl //accesing baseUrl
+        cy.visit(url) //passing url value to cy.visit()
+        cy.visit('www.google.com')
 
-//     })
-// })
+    })
+})
 /* NOTE=>Above code (15 line to 20 line)gives error as  ""> Unexpected token ':'" cause frontend developer aleady write the code and we doing some changes with there code so to handle this
 We need to add below code in support >index.js file
 
